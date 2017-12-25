@@ -26,6 +26,7 @@
 		5E56A6B51FECB25500910511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E56A6B71FECB25500910511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E56A6B81FECB25500910511 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E56A6BF1FECB3F400910511 /* CoreNFCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreNFCDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		5E56A6A81FECB25500910511 /* CoreNFCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5E56A6BF1FECB3F400910511 /* CoreNFCDemo.entitlements */,
 				5E56A6A91FECB25500910511 /* AppDelegate.h */,
 				5E56A6AA1FECB25500910511 /* AppDelegate.m */,
 				5E56A6AC1FECB25500910511 /* ViewController.h */,
@@ -102,7 +104,12 @@
 				TargetAttributes = {
 					5E56A6A51FECB25500910511 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -278,13 +285,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LW5266U92D;
+				CODE_SIGN_ENTITLEMENTS = CoreNFCDemo/CoreNFCDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = AZSDGP5N54;
 				INFOPLIST_FILE = CoreNFCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mob.CoreNFCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mob.sandslee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7aa04587-9aa5-430b-8031-7289bd3a3d1d";
+				PROVISIONING_PROFILE_SPECIFIER = SansLeeApp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -293,13 +303,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LW5266U92D;
+				CODE_SIGN_ENTITLEMENTS = CoreNFCDemo/CoreNFCDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = AZSDGP5N54;
 				INFOPLIST_FILE = CoreNFCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mob.CoreNFCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mob.sandslee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7aa04587-9aa5-430b-8031-7289bd3a3d1d";
+				PROVISIONING_PROFILE_SPECIFIER = SansLeeApp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
