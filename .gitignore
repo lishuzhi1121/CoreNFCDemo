@@ -38,6 +38,9 @@ index/
 build/
 DerivedData/
 
+## Cer
+Cer/
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
