@@ -8,25 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		5E56A6AB1FECB25500910511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E56A6AA1FECB25500910511 /* AppDelegate.m */; };
-		5E56A6AE1FECB25500910511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E56A6AD1FECB25500910511 /* ViewController.m */; };
 		5E56A6B11FECB25500910511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E56A6AF1FECB25500910511 /* Main.storyboard */; };
 		5E56A6B31FECB25500910511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E56A6B21FECB25500910511 /* Assets.xcassets */; };
 		5E56A6B61FECB25500910511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E56A6B41FECB25500910511 /* LaunchScreen.storyboard */; };
 		5E56A6B91FECB25500910511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E56A6B81FECB25500910511 /* main.m */; };
+		5EC8055F206CE4CA00A6EDA8 /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC8055E206CE4CA00A6EDA8 /* CoreNFC.framework */; };
+		5EC80562206CE69500A6EDA8 /* NFCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC80561206CE69500A6EDA8 /* NFCTableViewController.m */; };
+		5EC80565206CE90A00A6EDA8 /* NFCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC80564206CE90A00A6EDA8 /* NFCTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E56A6A61FECB25500910511 /* CoreNFCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreNFCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E56A6A91FECB25500910511 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5E56A6AA1FECB25500910511 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5E56A6AC1FECB25500910511 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5E56A6AD1FECB25500910511 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5E56A6B01FECB25500910511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E56A6B21FECB25500910511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E56A6B51FECB25500910511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E56A6B71FECB25500910511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E56A6B81FECB25500910511 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E56A6BF1FECB3F400910511 /* CoreNFCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreNFCDemo.entitlements; sourceTree = "<group>"; };
+		5EC8055E206CE4CA00A6EDA8 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		5EC80560206CE69500A6EDA8 /* NFCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFCTableViewController.h; sourceTree = "<group>"; };
+		5EC80561206CE69500A6EDA8 /* NFCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFCTableViewController.m; sourceTree = "<group>"; };
+		5EC80563206CE90A00A6EDA8 /* NFCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFCTableViewCell.h; sourceTree = "<group>"; };
+		5EC80564206CE90A00A6EDA8 /* NFCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFCTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC8055F206CE4CA00A6EDA8 /* CoreNFC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +51,7 @@
 			children = (
 				5E56A6A81FECB25500910511 /* CoreNFCDemo */,
 				5E56A6A71FECB25500910511 /* Products */,
+				5EC8055D206CE4CA00A6EDA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,8 +69,10 @@
 				5E56A6BF1FECB3F400910511 /* CoreNFCDemo.entitlements */,
 				5E56A6A91FECB25500910511 /* AppDelegate.h */,
 				5E56A6AA1FECB25500910511 /* AppDelegate.m */,
-				5E56A6AC1FECB25500910511 /* ViewController.h */,
-				5E56A6AD1FECB25500910511 /* ViewController.m */,
+				5EC80560206CE69500A6EDA8 /* NFCTableViewController.h */,
+				5EC80561206CE69500A6EDA8 /* NFCTableViewController.m */,
+				5EC80563206CE90A00A6EDA8 /* NFCTableViewCell.h */,
+				5EC80564206CE90A00A6EDA8 /* NFCTableViewCell.m */,
 				5E56A6AF1FECB25500910511 /* Main.storyboard */,
 				5E56A6B21FECB25500910511 /* Assets.xcassets */,
 				5E56A6B41FECB25500910511 /* LaunchScreen.storyboard */,
@@ -71,6 +80,14 @@
 				5E56A6B81FECB25500910511 /* main.m */,
 			);
 			path = CoreNFCDemo;
+			sourceTree = "<group>";
+		};
+		5EC8055D206CE4CA00A6EDA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EC8055E206CE4CA00A6EDA8 /* CoreNFC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E56A6AE1FECB25500910511 /* ViewController.m in Sources */,
+				5EC80562206CE69500A6EDA8 /* NFCTableViewController.m in Sources */,
 				5E56A6B91FECB25500910511 /* main.m in Sources */,
+				5EC80565206CE90A00A6EDA8 /* NFCTableViewCell.m in Sources */,
 				5E56A6AB1FECB25500910511 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
