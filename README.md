@@ -104,7 +104,7 @@ NDEF（NFC Data Exchange Format）是一种能够在NFC设备或者标签之间�
 
 ## 将 Mifare Classic Cards 用作 NDEF 标签
 
-关于Mifare的详细介绍请各位老板参见：[Mifare维基百科](https://zh.wikipedia.org/wiki/MIFARE) 
+Mifare Classic 1K和4K的卡可以被初始化为NFC的NDEF格式标签。关于Mifare的详细介绍请各位老板参见：[Mifare维基百科](https://zh.wikipedia.org/wiki/MIFARE) 
 Mifare Classic 可以配置为NFC论坛兼容的NDEF标签，但必须以某种特定的方式组织它里面的数据才可以。具体要求可以参考如下资料：
 
 [AN1304 - NFC Type MIFARE Classic Tag Operation](https://www.nxp.com/docs/en/application-note/AN1304.pdf)
@@ -177,6 +177,11 @@ Mifare应用程序的目录，为了在Mifare Classic卡片的扇区内存与单
 
 最后一个字节，0xFE 是TLV 块的终止符，表示这个块的结束，这个没什么好说的了～～
 
+> 相关参考链接：
+
+> * [NXP官方网站](https://www.nxp.com/)
+> * [NFC论坛](https://nfc-forum.org/)
+> * [Mifare Classic S50 技术详解](http://www.cnblogs.com/SCPlatform/p/5116180.html)
 
 ## iOS CoreNFC
 
