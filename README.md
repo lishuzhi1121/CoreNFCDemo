@@ -32,17 +32,15 @@ NDEF（NFC Data Exchange Format）是一种能够在NFC设备或者标签之间�
 
 一条NDEF记录的类型名称是一个3个位的数值，用来描述这条记录的类型，并且可以用来设置对该记录中其它的结构和内容的期望。简单的说就是这3个位不仅可以表示该条记录的类型，也可以在一定程度上决定了该条记录接下来的数据结构。可能的记录名称如下表：
 
-
 | TNF Value | Record Type |
 | --- | :-- |
-| 0x00 | Empty Record 表明这条记录没有类型、id或有效payload。这个记录类型一般用于新格式化的NDEF卡上，因为NDEF标签必须有至少一个NDEF纪录。
- |
-| 0x01 | Well-Known Record 表明记录类型字段使用RTD类型名称格式。这种类型名称用一个Record Type Definition (RTD)来存储任何指定的类型，例如：存储RTD文本、RTD URIs等等。同时，这是一种比较常用的也比较有用的记录类型。 |
-| 0x02 | MIME Media Record 表明payload是这条NDEF记录分块的中间或者最后一块。 |
-| 0x03 | Absolute URI Record 表明这条记录的类型字段一定包含一个URI字段。 |
-| 0x04 | External Record 表明这条记录的类型字段包含一个RTD格式的外部字段。 |
-| 0x05 | Unknown Record 表明payload的类型未知。 |
-| 0x06 | Unchanged Record 未发生变化的记录类型，释同MIME Media Record。 |
+| 0x00 | Empty Record 表明这条记录没有类型、id或有效payload。这个记录类型一般用于新格式化的NDEF卡上，因为NDEF标签必须有至少一个NDEF纪录。|
+| 0x01 | Well-Known Record 表明记录类型字段使用RTD类型名称格式。这种类型名称用一个Record Type Definition (RTD)来存储任何指定的类型，例如：存储RTD文本、RTD URIs等等。同时，这是一种比较常用的也比较有用的记录类型。|
+| 0x02 | MIME Media Record 表明payload是这条NDEF记录分块的中间或者最后一块。|
+| 0x03 | Absolute URI Record 表明这条记录的类型字段一定包含一个URI字段。|
+| 0x04 | External Record 表明这条记录的类型字段包含一个RTD格式的外部字段。|
+| 0x05 | Unknown Record 表明payload的类型未知。|
+| 0x06 | Unchanged Record 未发生变化的记录类型，释同MIME Media Record。|
 
 ###### IL：ID Length 字段
 
