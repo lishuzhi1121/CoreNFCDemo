@@ -24,7 +24,7 @@
 ```
 唤醒命令详细解释如下图：
 
-![唤醒命令](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.001.jpeg)
+![NFC数据格式.001](http://mweb.sandslee.com/NFC数据格式.001.jpeg)
 
 成功唤醒后PN532模块会返回如下数据：
 
@@ -33,7 +33,7 @@
 ```
 唤醒响应数据详细解释如下图：
 
-![唤醒响应](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.002.jpeg)
+![NFC数据格式.002](http://mweb.sandslee.com/NFC数据格式.002.jpeg)
 
 基本上唤醒没什么好说的，这个步骤还不关卡片的事情，所以如果你要是没得到PN532模块相应的响应数据，请不要怀疑你的NFC卡片出了什么问题，赶紧检查下你的代码和接线吧～
 
@@ -49,7 +49,7 @@
 
 寻卡命令的详细解释如下图：
 
-![寻卡命令](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.003.jpeg)
+![NFC数据格式.003](http://mweb.sandslee.com/NFC数据格式.003.jpeg)
 
 PN532模块寻卡成功，即找到卡之后返回如下数据：
 
@@ -59,7 +59,7 @@ PN532模块寻卡成功，即找到卡之后返回如下数据：
 
 寻卡响应数据的详细解释如下图：
 
-![寻卡响应](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.004.jpeg)
+![NFC数据格式.004](http://mweb.sandslee.com/NFC数据格式.004.jpeg)
 
 其中标红的就是我们要找的卡的UID，也就是卡的身份证号码，这个号码可以用来识别是哪张卡。
 
@@ -69,7 +69,7 @@ PN532模块寻卡成功，即找到卡之后返回如下数据：
 
 好了，到了激动人心的卡片密码验证环节了，在验证密码之前，我们先来看一下S50卡的存储机制，来一张性感图片：
 
-![存储机制](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.005.jpeg)
+![NFC数据格式.005](http://mweb.sandslee.com/NFC数据格式.005.jpeg)
 
 图中展示了一个 1024×8 bit 的EEPROM存储器被分为16个扇区，每个区又被分为4个块，每块拥有16个字节，以图上红色框里的14号扇区为例，每个区的第4块负责存放这个区的密码，在第4块内有密码A、控制位、密码B，一般默认的是密码A，控制位是用来控制某个块的读写、增减、传输、储存的，关于控制位的详细说明请参考：[AN1304 - NFC Type MIFARE Classic Tag Operation](https://www.nxp.com/docs/en/application-note/AN1304.pdf)。
 
@@ -83,7 +83,7 @@ PN532模块寻卡成功，即找到卡之后返回如下数据：
 
 验证命令详细解释如下图：
 
-![验证命令](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.006.jpeg)
+![NFC数据格式.006](http://mweb.sandslee.com/NFC数据格式.006.jpeg)
 
 验证成功时PN532模块会响应如下数据：
 
@@ -92,7 +92,8 @@ PN532模块寻卡成功，即找到卡之后返回如下数据：
 ```
 
 验证响应数据的详细解释如下图：
-![验证响应](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.007.jpeg)
+
+![NFC数据格式.007](http://mweb.sandslee.com/NFC数据格式.007.jpeg)
 
 其中红色表示的为验证状态位，00表示验证通过，密码正确。有些时候可能会收到17之类的数据，这种一般是你改过这个区的密码，或者是你没有经过唤醒和寻卡操作。
 
@@ -110,7 +111,7 @@ PN532模块寻卡成功，即找到卡之后返回如下数据：
 
 读取数据命令的详细解释如下图：
 
-![读取命令](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.008.jpeg)
+![NFC数据格式.008](http://mweb.sandslee.com/NFC数据格式.008.jpeg)
 
 读取成功时的响应数据如下：
 
@@ -120,11 +121,11 @@ PN532模块寻卡成功，即找到卡之后返回如下数据：
 
 读取成功时的响应数据详细解释如下图：
 
-![读取响应](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.009.jpeg)
+![NFC数据格式.009](http://mweb.sandslee.com/NFC数据格式.009.jpeg)
 
 效果展示如下图：
 
-![数据读取效果图](http://sands.93lj.com/Snip20180425_8.png)
+![Snip20180425_8](http://mweb.sandslee.com/Snip20180425_8.png)
 
 #### 2. 写入数据
 
@@ -136,7 +137,7 @@ PN532模块寻卡成功，即找到卡之后返回如下数据：
 
 写入数据命令的详细解释如下图：
 
-![写入请求](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.010.jpeg)
+![NFC数据格式.010](http://mweb.sandslee.com/NFC数据格式.010.jpeg)
 
 写入成功时的响应数据如下：
 
@@ -146,11 +147,13 @@ PN532模块寻卡成功，即找到卡之后返回如下数据：
 
 写入成功时响应的数据与验证成功响应的数据基本一致，详细解释如下图：
 
-![写入响应](http://sands.93lj.com/NFC%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.011.jpeg)
+![NFC数据格式.011](http://mweb.sandslee.com/NFC数据格式.011.jpeg)
 
 写入效果展示如下图：
 
-![数据写入效果图](http://sands.93lj.com/Snip20180425_9.png)
+![Snip20180425_9](http://mweb.sandslee.com/Snip20180425_9.png)
+
+
 
 
 

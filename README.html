@@ -437,7 +437,7 @@ Prism.languages.yaml={scalar:{pattern:/([\-:]\s*(?:![^\s]+)?[ \t]*[|>])[ \t]*(?:
 
 <p><code>NDEF Records</code>包含一个特定的<code>payload</code>，并且有以下结构来标识内容和记录大小:</p>
 
-<p><img src="http://sands.93lj.com/Snip20180329_1.png" alt="record"/></p>
+<p><img src="http://mweb.sandslee.com/Snip20180329_1.png" alt="Snip20180329_1"/></p>
 
 <h4 id="toc_6">Record Header（记录头）</h4>
 
@@ -537,11 +537,11 @@ Prism.languages.yaml={scalar:{pattern:/([\-:]\s*(?:![^\s]+)?[ \t]*[|>])[ \t]*(?:
 
 <p>这里，关于这个URI Records我要多说几句，这个类型可以用来存储例如电话号码、网站地址以及各种协议的链接等等很多有用的信息，它的结构定义如下：</p>
 
-<p><img src="http://sands.93lj.com/URI%20Record.png" alt="URI Record"/></p>
+<p><img src="http://mweb.sandslee.com/URI-Record.png" alt="URI-Record"/></p>
 
 <p>第一个字节表示该类型的识别码，这个识别码的主要是用于缩短URI的长度，它的有效值详见下表：</p>
 
-<p><img src="http://sands.93lj.com/Snip20180426_3.png" alt="Snip20180426_3"/></p>
+<p><img src="http://mweb.sandslee.com/Snip20180426_3.png" alt="Snip20180426_3"/></p>
 
 <p>后面的N个字节就是用来表示一个URI去掉前面识别码之后剩余的部分，举个例子：例如我们要将 <code>https://www.mob.com</code> 写入，则在第一个字节里我们要写入的是 <code>0x02</code>，表示 <code>https://www.</code>，接下来要连续写入的就是 <code>0x6D 0x6F 0x62 0x2E 0x63 0x6F 0x6D</code> (详细请参考：<a href="http://ascii.911cha.com/">ASCII码对照表</a>)</p>
 
@@ -583,7 +583,7 @@ V：Value Field 数值</p>
 
 <p>标签字段是唯一必填的字段，使用单个字节来标识 <code>TLV 块</code> 的类型，有效值如下：</p>
 
-<p><img src="http://sands.93lj.com/Snip20180426_5.png" alt="Snip20180426_5"/></p>
+<p><img src="http://mweb.sandslee.com/Snip20180426_5.png" alt="Snip20180426_5"/></p>
 
 <h5 id="toc_24">Length Field</h5>
 
@@ -591,7 +591,7 @@ V：Value Field 数值</p>
 一个字节格式就是简单0x00～0xFF的一个字节数值；<br/>
 三个字节格式的组成如下：</p>
 
-<p><img src="http://sands.93lj.com/Snip20180426_6.png" alt="Snip20180426_6"/></p>
+<p><img src="http://mweb.sandslee.com/Snip20180426_6.png" alt="Snip20180426_6"/></p>
 
 <h5 id="toc_25">Value Field</h5>
 
@@ -603,7 +603,7 @@ V：Value Field 数值</p>
 
 <h3 id="toc_27">3. 一个带有NDEF记录的Mifare Classic 卡片的内存示例</h3>
 
-<p><img src="http://sands.93lj.com/Snip20180426_8.png" alt="Snip20180426_8"/></p>
+<p><img src="http://mweb.sandslee.com/Snip20180426_8.png" alt="Snip20180426_8"/></p>
 
 <p>上图示例中在扇区1包含了两个NDEF记录：</p>
 
@@ -611,7 +611,7 @@ V：Value Field 数值</p>
 
 <p>第二个记录从扇区1块4的第3个字节开始，到块5的第6个字节结束：</p>
 
-<p><img src="http://sands.93lj.com/Snip20180426_9.png" alt="Snip20180426_9"/></p>
+<p><img src="http://mweb.sandslee.com/Snip20180426_9.png" alt="Snip20180426_9"/></p>
 
 <p>同样，对于前两个字节，根据TLV 块的描述，第一个字节 0x03 表示这是一个NDEF Message类型，第二个字节 0x11 表示该块的数据长度是17个字节。对于接下来17个字节的分析如下表：</p>
 
@@ -680,11 +680,11 @@ V：Value Field 数值</p>
 
 <p>我们的app要使用NFC必须要进行应用授权：首先要创建一个支持NFC的证书，并且开启<code>NFC Tag Reading</code>，如下图：</p>
 
-<p><img src="http://sands.93lj.com/nfccer.png" alt="nfccer"/></p>
+<p><img src="http://mweb.sandslee.com/nfccer.png" alt="nfccer"/></p>
 
 <p>导入证书之后，我们需要进行Info.plist配置<code>Privacy - NFC Scan Usage Description</code>权限，如下图：</p>
 
-<p><img src="http://sands.93lj.com/Snip20180329_3.png" alt="Snip20180329_3"/></p>
+<p><img src="http://mweb.sandslee.com/Snip20180329_3.png" alt="Snip20180329_3"/></p>
 
 <p>要实现NFC功能，我们得先导入<code>CoreNFC.framework</code>，并导入其头文件<code>#import &lt;CoreNFC/CoreNFC.h&gt;</code>目前为止，iOS模拟器还不支持CoreNFC，只能使用真机调试。</p>
 
