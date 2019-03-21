@@ -12,7 +12,7 @@ NFC（Near Field Communication）近场通信，当两个设备相互靠近时�
 
 NDEF（NFC Data Exchange Format）是一种能够在NFC设备或者标签之间进行信息交换的数据格式。NDEF格式由各种 `NDEF Messages` 和 `NDEF Records` 组成。NDEF格式使用了一种容易理解的格式来存储和交换信息，如：URI、纯文本等等。NFC标签，像`Mifare Classic`卡片可以配置为NDEF标签,通过一个NFC设备写入的数据可以被其他NDEF兼容的设备访问。NDEF消息还可以用于两个活跃的NFC设备之间“点对点”模式交换数据。
 
-![NDEF格式](http://ojca2gwha.bkt.clouddn.com/CoreNFC-tags.png)
+![CoreNFC-NDEF](http://mweb.sandslee.com/CoreNFC-NDEF.png)
 
 #### NDEF Messages
 
@@ -22,7 +22,7 @@ NDEF（NFC Data Exchange Format）是一种能够在NFC设备或者标签之间�
 
 `NDEF Records`包含一个特定的`payload`，并且有以下结构来标识内容和记录大小:
 
-![record](http://onmw6wg88.bkt.clouddn.com/Snip20180329_1.png)
+![record](http://sands.93lj.com/Snip20180329_1.png)
 
 #### Record Header（记录头）
 
@@ -92,11 +92,11 @@ NDEF（NFC Data Exchange Format）是一种能够在NFC设备或者标签之间�
 
 这里，关于这个URI Records我要多说几句，这个类型可以用来存储例如电话号码、网站地址以及各种协议的链接等等很多有用的信息，它的结构定义如下：
 
-![URI Record](http://onmw6wg88.bkt.clouddn.com/URI%20Record.png)
+![URI Record](http://sands.93lj.com/URI%20Record.png)
 
 第一个字节表示该类型的识别码，这个识别码的主要是用于缩短URI的长度，它的有效值详见下表：
 
-![Snip20180426_3](http://onmw6wg88.bkt.clouddn.com/Snip20180426_3.png)
+![Snip20180426_3](http://sands.93lj.com/Snip20180426_3.png)
 
 后面的N个字节就是用来表示一个URI去掉前面识别码之后剩余的部分，举个例子：例如我们要将 `https://www.mob.com` 写入，则在第一个字节里我们要写入的是 `0x02`，表示 `https://www.`，接下来要连续写入的就是 `0x6D 0x6F 0x62 0x2E 0x63 0x6F 0x6D` (详细请参考：[ASCII码对照表](http://ascii.911cha.com/))
 
@@ -133,7 +133,7 @@ Mifare应用程序的目录，为了在Mifare Classic卡片的扇区内存与单
 
 标签字段是唯一必填的字段，使用单个字节来标识 `TLV 块` 的类型，有效值如下：
 
-![Snip20180426_5](http://onmw6wg88.bkt.clouddn.com/Snip20180426_5.png)
+![Snip20180426_5](http://sands.93lj.com/Snip20180426_5.png)
 
 ##### Length Field
 
@@ -141,7 +141,7 @@ Mifare应用程序的目录，为了在Mifare Classic卡片的扇区内存与单
 一个字节格式就是简单0x00～0xFF的一个字节数值；
 三个字节格式的组成如下：
 
-![Snip20180426_6](http://onmw6wg88.bkt.clouddn.com/Snip20180426_6.png)
+![Snip20180426_6](http://sands.93lj.com/Snip20180426_6.png)
 
 ##### Value Field
 
@@ -153,7 +153,7 @@ Mifare应用程序的目录，为了在Mifare Classic卡片的扇区内存与单
 
 ### 3. 一个带有NDEF记录的Mifare Classic 卡片的内存示例
 
-![Snip20180426_8](http://onmw6wg88.bkt.clouddn.com/Snip20180426_8.png)
+![Snip20180426_8](http://sands.93lj.com/Snip20180426_8.png)
 
 上图示例中在扇区1包含了两个NDEF记录：
 
@@ -161,7 +161,7 @@ Mifare应用程序的目录，为了在Mifare Classic卡片的扇区内存与单
 
 第二个记录从扇区1块4的第3个字节开始，到块5的第6个字节结束：
 
-![Snip20180426_9](http://onmw6wg88.bkt.clouddn.com/Snip20180426_9.png)
+![Snip20180426_9](http://sands.93lj.com/Snip20180426_9.png)
 
 同样，对于前两个字节，根据TLV 块的描述，第一个字节 0x03 表示这是一个NDEF Message类型，第二个字节 0x11 表示该块的数据长度是17个字节。对于接下来17个字节的分析如下表：
 
@@ -191,11 +191,11 @@ Mifare应用程序的目录，为了在Mifare Classic卡片的扇区内存与单
 
 我们的app要使用NFC必须要进行应用授权：首先要创建一个支持NFC的证书，并且开启`NFC Tag Reading`，如下图：
 
-![nfccer](http://onmw6wg88.bkt.clouddn.com/nfccer.png)
+![nfccer](http://sands.93lj.com/nfccer.png)
 
 导入证书之后，我们需要进行Info.plist配置`Privacy - NFC Scan Usage Description`权限，如下图：
 
-![Snip20180329_3](http://onmw6wg88.bkt.clouddn.com/Snip20180329_3.png)
+![Snip20180329_3](http://sands.93lj.com/Snip20180329_3.png)
 
 要实现NFC功能，我们得先导入`CoreNFC.framework`，并导入其头文件`#import <CoreNFC/CoreNFC.h>`目前为止，iOS模拟器还不支持CoreNFC，只能使用真机调试。
 

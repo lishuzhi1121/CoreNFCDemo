@@ -1,0 +1,1237 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<style>
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+body {
+  background-color: white;
+}
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px;
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;;word-wrap: break-word; word-break: break-all;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #fff;
+}
+
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mo,
+.markdown-body .highlight .il,
+.markdown-body .highlight .m {
+  color: #945277;
+}
+
+.markdown-body .highlight .s,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .se,
+.markdown-body .highlight .sh,
+.markdown-body .highlight .si,
+.markdown-body .highlight .sx,
+.markdown-body .highlight .s1 {
+  color: #df5000;
+}
+
+.markdown-body .highlight .kc,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .kt,
+.markdown-body .highlight .k,
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #458;
+}
+
+.markdown-body .highlight .c,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp,
+.markdown-body .highlight .cs {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cs {
+  font-style: italic;
+}
+
+.markdown-body .highlight .n {
+  color: #333;
+}
+
+.markdown-body .highlight .na,
+.markdown-body .highlight .nv,
+.markdown-body .highlight .vc,
+.markdown-body .highlight .vg,
+.markdown-body .highlight .vi {
+  color: #008080;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086B3;
+}
+
+.markdown-body .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: #094e99;
+}
+
+.markdown-body .highlight .ni {
+  color: #800080;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #945277;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555;
+}
+
+.markdown-body .highlight .nt {
+  color: #000080;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.markdown-body .highlight .go {
+  color: #888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbb;
+}
+
+.markdown-body .highlight .sr {
+  color: #017936;
+}
+
+.markdown-body .highlight .ss {
+  color: #8b467f;
+}
+
+.markdown-body .highlight .bp {
+  color: #999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  float: left;
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rule .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.hljs-name {
+  color: #008080;
+}
+
+.hljs-regexp {
+  color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+
+.hljs-built_in {
+  color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">iOS 11 迟来的 NFC</h1>
+
+<h2 id="toc_1">前言</h2>
+
+<p>NFC这个词相信大家现在都已经不陌生了，各大城市的地铁、商场等等支持NFC支付一度成为头条的热点。其实很早之前就已经有二维码和NFC的诞生了，但是由于二维码成本低廉，技术门槛相对较低，因此，二维码迅速抢占了移动支付的市场，但是，与此同时NFC的发展并未因此停止。其实在安卓端的NFC发展已经非常迅猛了，只是我们的苹果爸爸迟迟不肯带我们一起玩NFC。终于，在去年的WWDC上，苹果宣布<strong><del>“开放”</del></strong>其NFC接口，这为以后NFC的应用开发提供了更多的可能。</p>
+
+<h2 id="toc_2">关于NFC</h2>
+
+<p>NFC（Near Field Communication）近场通信，当两个设备相互靠近时能进行信息交流的一个技术。使用了NFC技术的设备（比如手机）可以在彼此靠近的情况下进行数据交换，是由非接触式射频识别(RFID)及互连互通技术整合演变而来，通过在单一芯片上集成感应式读卡器、感应式卡片和点对点通信的功能，利用移动终端实现移动支付、电子票务、门禁、移动身份识别、防伪等应用。目前，苹果的CoreNFC对NFC的格式支持有限，暂时仅支持NDEF格式。</p>
+
+<h2 id="toc_3">关于NDEF</h2>
+
+<p>NDEF（NFC Data Exchange Format）是一种能够在NFC设备或者标签之间进行信息交换的数据格式。NDEF格式由各种 <code>NDEF Messages</code> 和 <code>NDEF Records</code> 组成。NDEF格式使用了一种容易理解的格式来存储和交换信息，如：URI、纯文本等等。NFC标签，像<code>Mifare Classic</code>卡片可以配置为NDEF标签,通过一个NFC设备写入的数据可以被其他NDEF兼容的设备访问。NDEF消息还可以用于两个活跃的NFC设备之间“点对点”模式交换数据。</p>
+
+<p><img src="http://ojca2gwha.bkt.clouddn.com/CoreNFC-tags.png" alt="NDEF格式"/></p>
+
+<h4 id="toc_4">NDEF Messages</h4>
+
+<p><code>NDEF Messages</code>是<code>NDEF Records</code>交换机制的基础，每一个message包含一个或多个records。</p>
+
+<h4 id="toc_5">NDEF Records</h4>
+
+<p><code>NDEF Records</code>包含一个特定的<code>payload</code>，并且有以下结构来标识内容和记录大小:</p>
+
+<p><img src="http://onmw6wg88.bkt.clouddn.com/Snip20180329_1.png" alt="record"/></p>
+
+<h4 id="toc_6">Record Header（记录头）</h4>
+
+<p>记录头包含了很多重要的信息，它占用3个位来标识遵循<code>TNF</code>协议的记录的类型，讲人话就是这3个位用来表示这条记录的类型的。</p>
+
+<h6 id="toc_7">TNF: Type Name Format 字段</h6>
+
+<p>一条NDEF记录的类型名称是一个3个位的数值，用来描述这条记录的类型，并且可以用来设置对该记录中其它的结构和内容的期望。简单的说就是这3个位不仅可以表示该条记录的类型，也可以在一定程度上决定了该条记录接下来的数据结构。可能的记录名称如下表：</p>
+
+<table>
+<thead>
+<tr>
+<th>TNF Value</th>
+<th style="text-align: left">Record Type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0x00</td>
+<td style="text-align: left">Empty Record 表明这条记录没有类型、id或有效payload。这个记录类型一般用于新格式化的NDEF卡上，因为NDEF标签必须有至少一个NDEF纪录。</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td style="text-align: left">Well-Known Record 表明记录类型字段使用RTD类型名称格式。这种类型名称用一个Record Type Definition (RTD)来存储任何指定的类型，例如：存储RTD文本、RTD URIs等等。同时，这是一种比较常用的也比较有用的记录类型。</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td style="text-align: left">MIME Media Record 表明payload是这条NDEF记录分块的中间或者最后一块。</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td style="text-align: left">Absolute URI Record 表明这条记录的类型字段一定包含一个URI字段。</td>
+</tr>
+<tr>
+<td>0x04</td>
+<td style="text-align: left">External Record 表明这条记录的类型字段包含一个RTD格式的外部字段。</td>
+</tr>
+<tr>
+<td>0x05</td>
+<td style="text-align: left">Unknown Record 表明payload的类型未知。</td>
+</tr>
+<tr>
+<td>0x06</td>
+<td style="text-align: left">Unchanged Record 未发生变化的记录类型，释同MIME Media Record。</td>
+</tr>
+</tbody>
+</table>
+
+<h6 id="toc_8">IL：ID Length 字段</h6>
+
+<p><code>IL</code>是ID长度的标志位，用来表示下面的<code>ID Length</code>字段是否省略。如果这个位设置为0，则该条记录中省略<code>ID Length</code>。</p>
+
+<h6 id="toc_9">SR：Short Record 位</h6>
+
+<p>短记录标志位，如果下面的<code>PAYLOAD LENGTH</code>字段小于等于一个字节，则该位设置为1 。</p>
+
+<h6 id="toc_10">CF：Chunk Flag</h6>
+
+<p>块标识位，用于标识当前块是第一个记录块还是中间的记录块。</p>
+
+<h6 id="toc_11">ME：Message End</h6>
+
+<p>结束标志位，用于标识当前记录是否是当前Message的最后一条记录。</p>
+
+<h6 id="toc_12">MB：Message Begin</h6>
+
+<p>起始标志位，用于标识当前记录是否是当前Message的第一条记录。</p>
+
+<h4 id="toc_13">Type Length</h4>
+
+<p>表示类型字段的长度。对于上面<code>TNF</code>字段描述中的某些值，该字段一直为0 。</p>
+
+<h4 id="toc_14">Payload Length</h4>
+
+<p>表示该条记录的payload字段长度。如果上面的<code>SR</code>字段设置为1，则该字段占用1个字节的长度，但是如果<code>SR</code>设置为0，则该字段将有32个位，占用4个字节的长度。</p>
+
+<h4 id="toc_15">ID Length</h4>
+
+<p>表示该条记录的ID的长度。只有当上面的<code>IL</code>位置1时该字段才会被省略。</p>
+
+<h4 id="toc_16">Record Type</h4>
+
+<p>表示记录的类型，这个字段的值必须根据<code>TNF</code>位的设置确定。</p>
+
+<h4 id="toc_17">Record ID</h4>
+
+<p>表示该条记录的ID。当<code>IL</code>位为0时，该字段省略。</p>
+
+<h4 id="toc_18">Payload</h4>
+
+<p>表示该条记录的payload，该字段的长度务必与上面的<code>Payload Length</code>字段值一致。</p>
+
+<h2 id="toc_19">关于 Well-Known Records 和 URI Records</h2>
+
+<p>首先要说的就是这两个概念的区别，<strong>Well-Known Records（TNF Record Type 0x01）</strong> 是最常用也是最有用的NFC记录类型，它是写在上面说到的TNF字段的三个位里的，它描述的是当前这条NDEF记录的整体类型，相当于一个总的架构决策。而 <strong>URI Records（0x55/‘U’）</strong>是比较有用的数据类型，它是写在上面 <code>Recode Type</code> 字段的一个字节（8个位）里的，它描述的是这条NDEF记录携带的数据信息类型，简单的说就是这条记录携带了什么样的信息。</p>
+
+<p>这里，关于这个URI Records我要多说几句，这个类型可以用来存储例如电话号码、网站地址以及各种协议的链接等等很多有用的信息，它的结构定义如下：</p>
+
+<p><img src="http://onmw6wg88.bkt.clouddn.com/URI%20Record.png" alt="URI Record"/></p>
+
+<p>第一个字节表示该类型的识别码，这个识别码的主要是用于缩短URI的长度，它的有效值详见下表：</p>
+
+<p><img src="http://onmw6wg88.bkt.clouddn.com/Snip20180426_3.png" alt="Snip20180426_3"/></p>
+
+<p>后面的N个字节就是用来表示一个URI去掉前面识别码之后剩余的部分，举个例子：例如我们要将 <code>https://www.mob.com</code> 写入，则在第一个字节里我们要写入的是 <code>0x02</code>，表示 <code>https://www.</code>，接下来要连续写入的就是 <code>0x6D 0x6F 0x62 0x2E 0x63 0x6F 0x6D</code> (详细请参考：<a href="http://ascii.911cha.com/">ASCII码对照表</a>)</p>
+
+<p>以上所有内容就是关于NDEF数据格式的详细说明了，那么这里也很不幸的告诉大家，我们平时直接从某宝、某东或者某某某上买来的NFC卡片（俗称：白卡）都不会是NDEF格式的，所以。。。</p>
+
+<h2 id="toc_20">将 Mifare Classic Cards 用作 NDEF 标签</h2>
+
+<p>Mifare Classic 1K和4K的卡可以被初始化为NFC的NDEF格式标签。关于Mifare的详细介绍请各位老板参见：<a href="https://zh.wikipedia.org/wiki/MIFARE">Mifare维基百科</a> <br/>
+Mifare Classic 可以配置为NFC论坛兼容的NDEF标签，但必须以某种特定的方式组织它里面的数据才可以。具体要求可以参考如下资料：</p>
+
+<p><a href="https://www.nxp.com/docs/en/application-note/AN1304.pdf">AN1304 - NFC Type MIFARE Classic Tag Operation</a></p>
+
+<p>上面的是使用手册的权威来源，下面将快速的介绍一下将 Mifare Classic Cards 用作 NDEF 标签所涉及的关键概念。</p>
+
+<h3 id="toc_21">1. Mifare Application Directory (MAD)</h3>
+
+<p>Mifare应用程序的目录，为了在Mifare Classic卡片的扇区内存与单个NDEF记录之间建立关系而存在。MAD表明了哪个扇区包含着哪个NDEF记录。关于Mifare应用程序目录的权威信息来源如下：</p>
+
+<p><a href="https://www.nxp.com/docs/en/application-note/AN10787.pdf">AN10787 - MIFARE Application Directory (MAD)</a></p>
+
+<blockquote>
+<p>为了兼容性考虑，官方根据卡片内存的大小定义了两种不同类型的MAD，简单说明一下区别，MAD1可以用在任何卡片上，而MAD2只能用在内存大于1K字节的卡片上。</p>
+</blockquote>
+
+<h3 id="toc_22">2. 存储 NDEF Messages</h3>
+
+<p>为了在Mifare Classic卡上存储NDEF消息，消息需要被封装在一个叫做 <code>TLV 块</code> 的东西里面。关于 <code>TLV 块</code> 的基本结构描述如下：</p>
+
+<blockquote>
+<p>TLV 是三个不同维度的缩写：<br/>
+T：Tag Field 标签<br/>
+L：Length Field 长度<br/>
+V：Value Field 数值</p>
+</blockquote>
+
+<p>一个 <code>TLV 块</code> 由一个或多个字节组成，这取决于上面三个维度的存在情况，但至少有一个字节，因为 T 字段在每种情况下都是强制性的。</p>
+
+<h5 id="toc_23">Tag Field</h5>
+
+<p>标签字段是唯一必填的字段，使用单个字节来标识 <code>TLV 块</code> 的类型，有效值如下：</p>
+
+<p><img src="http://onmw6wg88.bkt.clouddn.com/Snip20180426_5.png" alt="Snip20180426_5"/></p>
+
+<h5 id="toc_24">Length Field</h5>
+
+<p>长度字段包含了数值字段的长度（字节），它可以使用一个或三个字节两种不同的方式表示：<br/>
+一个字节格式就是简单0x00～0xFF的一个字节数值；<br/>
+三个字节格式的组成如下：</p>
+
+<p><img src="http://onmw6wg88.bkt.clouddn.com/Snip20180426_6.png" alt="Snip20180426_6"/></p>
+
+<h5 id="toc_25">Value Field</h5>
+
+<p>数值字段仅在长度字段存在且不等于0x00时才存在，这个字段就是 <code>payload</code> 的存储位置。</p>
+
+<h5 id="toc_26">Terminator TLV</h5>
+
+<p>终止符，是数据区域中的最后一个TLV 块，固定的单个字节：0xFE，这个TLV 块也是是强制性的。</p>
+
+<h3 id="toc_27">3. 一个带有NDEF记录的Mifare Classic 卡片的内存示例</h3>
+
+<p><img src="http://onmw6wg88.bkt.clouddn.com/Snip20180426_8.png" alt="Snip20180426_8"/></p>
+
+<p>上图示例中在扇区1包含了两个NDEF记录：</p>
+
+<p>第一个记录在扇区1块4的前两个字节：根据上面的描述，每个记录都以TLV 块开头，并且TLV 块的第一个字节（值0x00）指示这是一个空块类型，第二个字节是长度字段，并且也是0x00，因此该记录没有payload，TLV 块的值字段不存在。当Mifare Classic卡首次格式化以确保至少有一条记录存在时，一般会插入此记录。</p>
+
+<p>第二个记录从扇区1块4的第3个字节开始，到块5的第6个字节结束：</p>
+
+<p><img src="http://onmw6wg88.bkt.clouddn.com/Snip20180426_9.png" alt="Snip20180426_9"/></p>
+
+<p>同样，对于前两个字节，根据TLV 块的描述，第一个字节 0x03 表示这是一个NDEF Message类型，第二个字节 0x11 表示该块的数据长度是17个字节。对于接下来17个字节的分析如下表：</p>
+
+<table>
+<thead>
+<tr>
+<th>Byte(s)</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>04:04</td>
+<td>0xD1</td>
+<td>NDEF记录的记录头，详细解释参考上面的NDEF记录描述部分。位分配如下：<br>TNF = 0x01 表示这是一个Well-Known类型的记录 <br>IL  = 0    表示没有ID字段 <br>SR  = 1    表示这是一个短记录 <br>CF  = 0    表示这个块不是第一块 <br>ME  = 1    表示当前记录为最后一条记录 <br>MB  = 1    表示Message的开始</td>
+</tr>
+<tr>
+<td>04:05</td>
+<td>0x01</td>
+<td>NDEF记录类型的长度，1个字节，因为下面的记录类型值是0x55</td>
+</tr>
+<tr>
+<td>04:06</td>
+<td>0x0D</td>
+<td>表示payload的长度，13个字节</td>
+</tr>
+<tr>
+<td>04:07</td>
+<td>0x55</td>
+<td>NDEF记录的类型，0x55表示URI类型</td>
+</tr>
+<tr>
+<td>04:08</td>
+<td>0x01</td>
+<td>表示payload开始，后面的将是payload中的内容</td>
+</tr>
+<tr>
+<td>04:09..05:04</td>
+<td>...</td>
+<td>payload内容的16进制数据</td>
+</tr>
+</tbody>
+</table>
+
+<p>最后一个字节，0xFE 是TLV 块的终止符，表示这个块的结束，这个没什么好说的了～～</p>
+
+<blockquote>
+<p>相关参考链接：</p>
+
+<ul>
+<li><a href="https://www.nxp.com/">NXP官方网站</a></li>
+<li><a href="https://nfc-forum.org/">NFC论坛</a></li>
+<li><a href="http://www.cnblogs.com/SCPlatform/p/5116180.html">Mifare Classic S50 技术详解</a></li>
+</ul>
+</blockquote>
+
+<h2 id="toc_28">iOS CoreNFC</h2>
+
+<p>下面将通过一个简单的示例来演示怎么使用苹果爸爸推出的CoreNFC，该示例仅可以用来读取存储在卡片上的NDEF格式的信息。</p>
+
+<blockquote>
+<p>为此，我使用了<code>STM32F407</code>单片机与<code>Adafruit PN532 Shield</code>NFC读写模块配对，将信息写入NDEF格式的卡片上。本文中，我不会记录如何将普通的<code>Mifare Classic</code>卡片格式化成NDEF格式的卡片以及如何将数据写入到NDEF卡片中（iOS的CoreNFC暂时不支持写入）。</p>
+</blockquote>
+
+<p>我们的app要使用NFC必须要进行应用授权：首先要创建一个支持NFC的证书，并且开启<code>NFC Tag Reading</code>，如下图：</p>
+
+<p><img src="http://onmw6wg88.bkt.clouddn.com/nfccer.png" alt="nfccer"/></p>
+
+<p>导入证书之后，我们需要进行Info.plist配置<code>Privacy - NFC Scan Usage Description</code>权限，如下图：</p>
+
+<p><img src="http://onmw6wg88.bkt.clouddn.com/Snip20180329_3.png" alt="Snip20180329_3"/></p>
+
+<p>要实现NFC功能，我们得先导入<code>CoreNFC.framework</code>，并导入其头文件<code>#import &lt;CoreNFC/CoreNFC.h&gt;</code>目前为止，iOS模拟器还不支持CoreNFC，只能使用真机调试。</p>
+
+<h4 id="toc_29">1. 初始化Session</h4>
+
+<p>与二维码扫描等类似，NFC 也具备一个用于信息交互的Session，并且这个Session要在使用期间一直持有，所以初始化Session代码如下：</p>
+
+<pre><code class="language-objc">@interface NFCTableViewController ()&lt;NFCNDEFReaderSessionDelegate&gt;
+
+/**
+ NFC Session
+ */
+@property (nonatomic, strong) NFCNDEFReaderSession *nfcSession;
+
+/**
+ founded NFC Messages
+ */
+@property (nonatomic, strong) NSMutableArray&lt;NSArray&lt;NFCNDEFMessage *&gt; *&gt; *nfcMessages;
+
+@end
+
+@implementation NFCTableViewController
+
+#pragma mark - initializeNFC
+
+- (void)initializeNFCSession {
+    // 创建 Session
+    self.nfcSession = [[NFCNDEFReaderSession alloc] initWithDelegate:self queue:dispatch_get_main_queue() invalidateAfterFirstRead:NO];
+    // 设置 Session 的提示信息
+    self.nfcSession.alertMessage = @&quot;You can scan NFC-tags by holding them behind the top of your iPhone.&quot;;
+}
+
+@end
+</code></pre>
+
+<h4 id="toc_30">2. 启动Session</h4>
+
+<p>经过上面的初始化之后，有了Session就可以开启监听了，启动监听很简单，示例代码如下：</p>
+
+<pre><code class="language-objc">- (IBAction)startSearchBtnClick:(UIBarButtonItem *)sender {
+    NSLog(@&quot;%s&quot;, __func__);
+    // 启动Session
+    [self.nfcSession beginSession];
+}
+</code></pre>
+
+<p>Session启动时会自动调出系统的扫描面板，如下图：</p>
+
+<h4 id="toc_31">3. 监听代理回调</h4>
+
+<p>通过上面的方式把Session启动之后，设备就会自动开始扫描NDEF格式的标签信息，当扫描到标签信息，或者发生任何异常时都会通过代理方法回调，所以我们需要监听Session的回调信息，示例如下：</p>
+
+<pre><code class="language-objc">#pragma mark - NFCNDEFReaderSessionDelegate
+
+/*!
+ * @method readerSession:didInvalidateWithError:
+ *
+ * @param session   The session object that is invalidated.
+ * @param error     The error indicates the invalidation reason.
+ *
+ * @discussion      Gets called when a session becomes invalid.  At this point the client is expected to discard
+ *                  the returned session object.
+ */
+
+/**
+ NFC 读取的session发生错误或session过期时回调，此时客户端应当丢弃返回的session，即此session不可重用。
+
+ @param session 发生错误的session
+ @param error 错误信息
+ */
+- (void)readerSession:(NFCNDEFReaderSession *)session didInvalidateWithError:(NSError *)error {
+    if (error)
+    {
+        NSLog(@&quot;NFC-Session invalidated: %@&quot;, error);
+    }
+    if (self.nfcSession)
+    {
+        // 关闭当前session
+        [self.nfcSession invalidateSession];
+        self.nfcSession = nil;
+    }
+    // 重新初始化一个新的session
+    [self initializeNFCSession];
+}
+
+
+/*!
+ * @method readerSession:didDetectNDEFs:
+ *
+ * @param session   The session object used for tag detection.
+ * @param messages  Array of @link NFCNDEFMessage @link/ objects. The order of the discovery on the tag is maintained.
+ *
+ * @discussion      Gets called when the reader detects NFC tag(s) with NDEF messages in the polling sequence.  Polling
+ *                  is automatically restarted once the detected tag is removed from the reader&#39;s read range.
+ */
+
+/**
+ 当NFC Session在轮询队列中读取到NDEF信息时回调，此时轮询会自动重启一次再次检测NFC标签是否离开了读取范围。（原理类似于机械按键的防抖动）
+
+ @param session 读取Session
+ @param messages 读取到的信息
+ */
+- (void)readerSession:(NFCNDEFReaderSession *)session didDetectNDEFs:(NSArray&lt;NFCNDEFMessage *&gt; *)messages {
+    NSLog(@&quot;New NFC Messages %zd detected:&quot;, messages.count);
+    for (NFCNDEFMessage *message in messages) {
+        NSLog(@&quot;- %zd Records:&quot;, message.records.count);
+        for (NFCNDEFPayload *record in message.records) {
+            NSLog(@&quot;\t- TNF(TypeNameFormat): %@&quot;, [self formattedTypeNameFormat:record.typeNameFormat]);
+            NSLog(@&quot;\t- Payload: %@&quot;, [[NSString alloc] initWithData:record.payload encoding:NSUTF8StringEncoding]);
+            NSLog(@&quot;\t- Type: %@&quot;, [[NSString alloc] initWithData:record.type encoding:NSUTF8StringEncoding]);
+            NSLog(@&quot;\t- Identifier: %@&quot;, [[NSString alloc] initWithData:record.identifier encoding:NSUTF8StringEncoding]);
+        }
+    }
+    
+    [self.nfcMessages addObject:messages];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
+}
+</code></pre>
+
+</div></body>
+
+</html>
